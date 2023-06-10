@@ -1,0 +1,33 @@
+<section class="news">
+  <div class="container">
+    <div class="news__head">
+      <div class="subtitle news__subtitle">News</div>
+      <h2 class="title news__title">Discover weekly content about organic food, & more</h2>
+      <a href="blog.html" class="btn btn_white news__btn">
+        <span>More News</span>
+        <div class="btn__round">
+          <img src="@icons/arrow_right.svg" alt="arrow right" class="btn__icon">
+        </div>
+      </a>
+    </div>
+    <div class="news-container news__news-container">
+      @@include('../new-item.html', {
+      "day": "25",
+      "month": "Nov",
+      "image": "@img/news/new1_bg.jpg",
+      "author": "Rachi Card",
+      "title": "The Benefits of Vitamin D & How to Get It",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+      })
+
+      @@include('../new-item.html', {
+      "day": "25",
+      "month": "Nov",
+      "image": "@img/news/new2_bg.jpg",
+      "author": "Rachi Card",
+      "title": "Our Favourite Summertime Tommeto",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+      })
+    </div>
+  </div>
+</section>

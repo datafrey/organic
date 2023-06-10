@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title":"Shop Single",
+"mainStyles": "css/shop-single.min.css"
+})
+
+<body>
+  @@include('html/header.html')
+  <main>
+    @@include('html/promo.html', {
+    "bg": "@img/shop-single/promo_bg.jpg",
+    "title": "Shop Single"
+    })
+    @@include('html/shop-single/description.html')
+    @@include('html/shop-single/related-products.html')
+    @@include('html/subscribe.html')
+  </main>
+  @@include('html/footer.html')
+  <script src="js/shopSingleApp.js"></script>
+</body>
+
+</html>

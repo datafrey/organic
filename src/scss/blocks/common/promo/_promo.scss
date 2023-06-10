@@ -1,0 +1,18 @@
+.promo {
+  width: 100vw;
+  height: 450px;
+  position: relative;
+  &__bg {
+    width: 100vw;
+    height: 450px;
+    object-fit: cover;
+    z-index: -1;
+  }
+  &__title {
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

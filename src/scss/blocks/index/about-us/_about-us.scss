@@ -1,0 +1,63 @@
+.about-us {
+  padding: 186px 0 199px 0;
+  background-color: #f9f8f8;
+  position: relative;
+  min-height: 1067px;
+  height: auto;
+  &__img {
+    position: absolute;
+    width: 911px;
+    height: 867px;
+    top: -99px;
+    left: -160px;
+    z-index: 1;
+  }
+  &__content {
+    position: relative;
+    width: 700px;
+    margin: 0 0 0 auto;
+    z-index: 2;
+    &-text {
+      margin-top: 14px;
+      font-family: OpenSans;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 165.4%;
+      color: $paragraph-text-color;
+    }
+    &-items {
+      margin-top: 46px;
+      display: grid;
+      grid-template: minmax(101px, auto) / 100%;
+      row-gap: 30px;
+    }
+    &-item {
+      display: grid;
+      grid-template: minmax(29px, auto) minmax(60px, auto) / 101px 444px;
+      row-gap: 7px;
+      column-gap: 19px;
+      &-rounded-square {
+        width: 101px;
+        height: 101px;
+        grid-row: 1 / 3;
+        background: #ffffff;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-title {
+        margin-top: 0;
+      }
+      &-text {
+        font-family: OpenSans;
+        font-size: 18px;
+        line-height: 165.4%;
+        color: $paragraph-text-color;
+      }
+    }
+    &-btn {
+      margin-top: 46px;
+    }
+  }
+}

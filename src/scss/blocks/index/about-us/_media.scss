@@ -1,0 +1,143 @@
+@media (max-width: 1650px) {
+  .about-us {
+    padding: 139px 0 150px 0;
+    min-height: 800px;
+    &__img {
+      width: 683px;
+      height: 650px;
+      top: -74px;
+      left: -120px;
+    }
+    &__content {
+      width: 526px;
+      &-text {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+      &-items {
+        margin-top: 34px;
+        grid-template: minmax(76px, auto) / 100%;
+        row-gap: 22px;
+      }
+      &-item {
+        grid-template: minmax(22px, auto) minmax(44px, auto) / 76px 333px;
+        row-gap: 5px;
+        column-gap: 14px;
+        &-rounded-square {
+          width: 76px;
+          height: 76px;
+        }
+        &-icon {
+          width: 40px;
+          height: 34px;
+        }
+        &-title {
+          margin-top: 0;
+        }
+        &-text {
+          font-size: 14px;
+        }
+      }
+      &-btn {
+        margin-top: 34px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .about-us {
+    padding: 126px 0 136px 0;
+    min-height: 728px;
+    &__img {
+      width: 622px;
+      height: 591px;
+      top: -63px;
+      left: -109px;
+    }
+    &__content {
+      width: 480px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .about-us {
+    padding: 95px 0 104px 0;
+    min-height: 690px;
+    &__img {
+      left: -211px;
+    }
+    &__content {
+      width: 360px;
+      &-items {
+        margin-top: 29px;
+      }
+      &-item {
+        grid-template: minmax(20px, auto) minmax(44px, auto) / 65px 281px;
+        &-rounded-square {
+          width: 65px;
+          height: 65px;
+          border-radius: 17px;
+        }
+        &-icon {
+          width: 34px;
+          height: 29px;
+        }
+      }
+      &-btn {
+        margin-top: 29px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-us {
+    padding: 68px 0 82px 0;
+    min-height: 618px;
+    overflow: hidden;
+    position: relative;
+    picture {
+      bottom: 0;
+      right: 0;
+    }
+    &__img {
+      top: auto;
+      left: auto;
+      width: 500px;
+      height: 475px;
+      right: -215px;
+      bottom: -85px;
+      z-index: 1;
+    }
+    &__content {
+      position: relative;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-us {
+    padding: 55px 0 62px 0;
+    &__img {
+      display: none;
+    }
+    &__content {
+      &-item {
+        grid-template: minmax(20px, auto) minmax(44px, auto) / 49px auto;
+        &-rounded-square {
+          width: 49px;
+          height: 49px;
+          border-radius: 13px;
+        }
+        &-icon {
+          width: 25px;
+          height: 22px;
+        }
+      }
+    }
+  }
+}

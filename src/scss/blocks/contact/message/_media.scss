@@ -1,0 +1,115 @@
+@media (max-width: 1650px) {
+  .message {
+    padding: 30px 0 19px;
+    &__form {
+      width: 888px;
+      grid-template-columns: 427px 427px;
+      grid-template-rows: repeat(2, 95px) 220px 70px;
+      column-gap: 34px;
+      row-gap: 37px;
+    }
+    &__label {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &__input {
+      margin-top: 19px;
+      padding: 21px 17px 23px;
+      width: 427px;
+      height: 60px;
+      border-radius: 12px;
+      font-size: 14px;
+      line-height: 16px;
+      &:placeholder-shown {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    &__textarea {
+      margin-top: 19px;
+      padding: 21px 17px 23px;
+      height: 185px;
+      border-radius: 12px;
+      font-size: 14px;
+      line-height: 16px;
+      &:placeholder-shown {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    &__submit {
+      margin-top: 7px;
+      width: 165px;
+      height: 61px;
+      border-radius: 12px;
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .message {
+    padding: 27px 0 17px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .message {
+    &__form {
+      width: 100%;
+      padding: 0 20px;
+      grid-template-columns: 320px 320px;
+      justify-content: center;
+      column-gap: 26px;
+      row-gap: 28px;
+    }
+    &__input {
+      width: 320px;
+      height: 60px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .message {
+    &__form {
+      width: 540px;
+      padding: 0;
+      grid-template-columns: 540px;
+      grid-template-rows: repeat(4, 95px) 220px 70px;
+      justify-content: start;
+    }
+    &__label {
+      width: 540px;
+      &:nth-child(5) {
+        grid-column: 1/2;
+      }
+    }
+    &__input {
+      width: 540px;
+    }
+    &__submit {
+      grid-column: 1/2;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .message {
+    padding: 30px 20px 19px;
+    &__form {
+      width: 100%;
+      padding: 0;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(4, 95px) 220px 70px;
+      justify-content: start;
+    }
+    &__label {
+      width: 100%;
+    }
+    &__input {
+      width: 100%;
+    }
+  }
+}

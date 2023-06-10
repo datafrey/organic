@@ -1,0 +1,54 @@
+.offers {
+  min-height: 892px;
+  height: auto;
+  padding: 188px 0;
+  background: $significant-text-color;
+  &__title {
+    margin: 8px auto 0 auto;
+    width: 502px;
+  }
+  &__categories {
+    margin-top: 33px;
+    display: grid;
+    grid-template-rows: minmax(367px, auto);
+    grid-template-columns: repeat(4, 334px);
+    grid-auto-rows: minmax(367px, auto);
+    gap: 21px;
+    &-item {
+      display: block;
+      min-height: 367px;
+      height: auto;
+      text-decoration: none;
+      source,
+      picture {
+        position: relative;
+      }
+      &-img {
+        position: relative;
+        display: block;
+        width: 334px;
+        height: 314px;
+        object-fit: cover;
+        transition: 0.5s all;
+        &:hover {
+          transform: scale(1.1);
+        }
+        &-container {
+          width: 334px;
+          height: 314px;
+          border-radius: 29px;
+          overflow: hidden;
+        }
+      }
+      &-name {
+        margin-top: 24px;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        color: #ffffff;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@media (max-width: 1650px) {
+  .eco-friendly {
+    padding: 75px 0 81px 0;
+    min-height: 691px;
+    &__bg-img {
+      top: -75px;
+      min-height: 691px;
+      max-height: 691px;
+    }
+    &__content {
+      padding: 58px 49px 58px 67px;
+      width: 592px;
+    }
+    &__title {
+      width: 325px;
+    }
+    &__item {
+      margin-top: 26px;
+      &-text {
+        margin-top: 5px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .eco-friendly {
+    padding: 68px 0 74px 0;
+    min-height: 659px;
+    &__bg-img {
+      top: -68px;
+      min-height: 659px;
+      max-height: 659px;
+    }
+    &__content {
+      padding: 49px 44px 49px 55px;
+      width: 541px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .eco-friendly {
+    padding: 40px 0 56px 0;
+    min-height: 614px;
+    &__bg-img {
+      top: -40px;
+      min-height: 614px;
+      max-height: 614px;
+    }
+    &__content {
+      width: 403px;
+      padding: 31px 37px 36px 41px;
+    }
+    &__title {
+      width: 281px;
+    }
+    &__item {
+      margin-top: 21px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .eco-friendly {
+    min-height: 544px;
+    position: relative;
+    background: url('@img/homepage/eco_friendly_bg_part.jpg') center
+      (center / cover) no-repeat;
+    &__bg-img {
+      display: none;
+    }
+    &__content {
+      width: 540px;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .eco-friendly {
+    padding: 30px 0 38px 0;
+    &__content {
+      padding: 26px 30px 26px 33px;
+      width: 100%;
+    }
+    &__title {
+      width: 100%;
+    }
+  }
+}

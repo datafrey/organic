@@ -1,0 +1,104 @@
+@media (max-width: 1650px) {
+  .subscribe {
+    margin: 76px 0 48px 0;
+    &__container {
+      padding: 79px 53px;
+      border-radius: 23px;
+    }
+    &__title {
+      width: 257px;
+    }
+    &__form {
+      width: 431px;
+    }
+    &__input-email {
+      padding: 21px 17px 23px 17px;
+      width: 262px;
+      height: 60px;
+      font-size: 14px;
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+    &__btn {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .subscribe {
+    margin: 69px 0 44px 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .subscribe {
+    margin: 53px 0 32px 0;
+    &__container {
+      padding: 58px 44px;
+      border-radius: 17px;
+    }
+    &__title {
+      font-size: 27px;
+      line-height: 30px;
+      margin-top: 0;
+      width: 186px;
+    }
+    &__form {
+      width: 323px;
+    }
+    &__input-email {
+      width: 196px;
+      height: 45px;
+      border-radius: 12px;
+    }
+    &__btn {
+      margin-top: 0;
+      width: 121px;
+      height: 45px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .subscribe {
+    &__container {
+      display: block;
+      padding: 34px 44px;
+      background: url('@img/homepage/subscribe_bg.jpg') left (center/cover)
+        no-repeat;
+    }
+    &__title {
+      text-align: center;
+      margin: 0 auto;
+    }
+    &__form {
+      margin: 20px auto 0;
+    }
+    &__input-email {
+      border-radius: 8px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .subscribe {
+    margin: 32px 0 32px 0;
+    &__container {
+      background: url('@img/homepage/subscribe_bg.jpg') right center/cover
+        no-repeat;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    &__input-email {
+      width: 100%;
+    }
+    &__btn {
+      margin-top: 10px;
+    }
+  }
+}

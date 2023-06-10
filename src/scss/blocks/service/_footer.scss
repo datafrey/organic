@@ -1,0 +1,27 @@
+.footer {
+  padding: 140px 0 102px 0;
+}
+
+@media (max-width: 1650px) {
+  .footer {
+    padding-top: 105px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .footer {
+    padding-top: 78px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .footer {
+    padding-top: 58px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer {
+    padding-top: 58px;
+  }
+}

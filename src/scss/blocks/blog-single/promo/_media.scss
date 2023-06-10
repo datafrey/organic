@@ -1,0 +1,115 @@
+@media (max-width: 1650px) {
+  .promo {
+    min-height: 835px;
+    &__bg {
+      height: 673px;
+    }
+    &__wrapper {
+      padding: 57px 62px;
+      width: 1050px;
+      height: 288px;
+      top: 547px;
+      box-shadow: 0px 10.5px 27px rgba(204, 204, 204, 0.25);
+      border-radius: 22px;
+    }
+    &__credits {
+      height: 16px;
+      &-date {
+        font-size: 14px;
+        line-height: 16px;
+      }
+      &-author {
+        margin-left: 22px;
+        &-icon {
+          width: 13px;
+          height: 15px;
+        }
+        &-name {
+          margin-left: 6px;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+    &__title {
+      margin-top: 15px;
+    }
+    &__descr {
+      margin-top: 15px;
+      width: 544px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .promo {
+    min-height: 790px;
+    &__bg {
+      height: 615px;
+    }
+    &__wrapper {
+      width: 960px;
+      min-height: 264px;
+      top: 500px;
+      border-radius: 20px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .promo {
+    min-height: 615px;
+    &__bg {
+      height: 615px;
+    }
+    &__wrapper {
+      width: 720px;
+      min-height: 339px;
+      border-radius: 20px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .promo {
+    min-height: 700px;
+    &__bg {
+      height: 700px;
+    }
+    &__wrapper {
+      width: 540px;
+      min-height: 365px;
+      border-radius: 20px;
+    }
+    &__descr {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .promo {
+    min-height: 600px;
+    &__bg {
+      height: 600px;
+    }
+    &__wrapper {
+      padding: 35px;
+      width: calc(100% - 40px);
+      height: fit-content;
+    }
+    &__credits {
+      height: fit-content;
+      justify-content: start;
+      align-items: start;
+      flex-direction: column;
+      &-author {
+        margin-left: 0;
+        margin-top: 8px;
+      }
+    }
+  }
+}

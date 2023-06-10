@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title":"Blog",
+"mainStyles": "css/blog.min.css"
+})
+
+<body>
+  @@include('html/header.html')
+  <main>
+    @@include('html/promo.html', {
+    "bg": "@img/blog/promo_bg.jpg",
+    "title": "Recent News"
+    })
+    @@include('html/blog/news.html')
+    @@include('html/subscribe.html')
+  </main>
+  @@include('html/footer.html')
+  <script src="js/blogApp.js"></script>
+</body>
+
+</html>

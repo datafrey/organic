@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title":"Organic",
+"mainStyles": "css/index.min.css",
+"additionalStyles": [
+"https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+]
+})
+
+<body>
+  @@include('html/header.html')
+  <main>
+    @@include('html/index/promo.html')
+    @@include('html/index/banners.html')
+    @@include('html/index/about-us.html')
+    @@include('html/index/categories.html')
+    @@include('html/index/testimonial.html')
+    @@include('html/index/offers.html')
+    @@include('html/index/eco-friendly.html')
+    @@include('html/index/gallery.html')
+    @@include('html/index/news.html')
+    @@include('html/subscribe.html')
+  </main>
+  @@include('html/footer.html')
+  <script src="js/indexApp.js"></script>
+</body>
+
+</html>

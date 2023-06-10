@@ -1,0 +1,209 @@
+.header {
+  width: 100%;
+  min-height: 204px;
+  padding: 69px 0;
+  .container {
+    margin: 0 auto;
+    width: 1566px;
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+    text-decoration: none;
+    &-text {
+      margin-left: 8px;
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-size: 38px;
+      color: $significant-text-color;
+    }
+  }
+  &__navigation {
+    &-links {
+      margin-right: 130px;
+      width: 564px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-link {
+      font-family: Roboto;
+      font-weight: 700;
+      font-size: 20px;
+      color: $significant-text-color;
+      text-decoration: none;
+    }
+    &-dropdown {
+      position: relative;
+      &-btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: none;
+        background: none;
+        cursor: pointer;
+        span {
+          margin-right: 5px;
+        }
+        &-icon {
+          display: block;
+          transition: 0.7s all;
+          &_active {
+            transform: rotate(-180deg);
+          }
+        }
+      }
+      &-content {
+        display: none;
+        padding: 30px 20px;
+        position: absolute;
+        top: 100%;
+        left: -20px;
+        width: 300px;
+        background-color: #ffffff;
+        z-index: 1;
+        &_shown {
+          display: block;
+          animation: appear 0.7s;
+        }
+        .header__navigation-link {
+          display: block;
+          margin-bottom: 20px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    &-mobile-opener {
+      display: none;
+      position: absolute;
+      bottom: calc(100% - 7px);
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 50px;
+      border-radius: 100% 100% 0 0;
+      background-color: $btn-bg-color2;
+      z-index: 1000;
+      transition: 1s all;
+      span {
+        width: 30px;
+        height: 3px;
+        background-color: #274c5b;
+        transition: 0.7s all;
+      }
+      span:nth-child(1) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 5px);
+      }
+      span:nth-child(2) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+      span:nth-child(3) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -8px);
+      }
+      &_close-mod {
+        padding: 0;
+        bottom: calc(100% - 120px);
+        span:nth-child(1) {
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+        span:nth-child(2) {
+          opacity: 0;
+        }
+        span:nth-child(3) {
+          transform: translate(-50%, -50%) rotate(-45deg);
+        }
+      }
+    }
+  }
+  &__search-and-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__search {
+    display: block;
+    margin-right: 18px;
+    width: 376px;
+    height: 66px;
+    position: relative;
+    &-input {
+      padding: 6px 68px 6px 24px;
+      font-size: 20px;
+      font-family: Roboto;
+      font-weight: 500;
+      color: $significant-text-color;
+      width: 100%;
+      height: 100%;
+      background: #fafafa;
+      border-radius: 36px;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    &-btn {
+      width: 56px;
+      height: 56px;
+      position: absolute;
+      right: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      border: none;
+      background-color: #7eb693;
+      cursor: pointer;
+    }
+  }
+  &__cart {
+    display: block;
+    width: 159px;
+    height: 66px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 33px;
+    position: relative;
+    cursor: pointer;
+    &-round {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 56px;
+      height: 56px;
+      position: absolute;
+      left: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      background-color: $significant-text-color;
+    }
+    span {
+      display: block;
+      position: absolute;
+      left: 74px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'Roboto';
+      font-weight: 600;
+      font-size: 18px;
+      color: $significant-text-color;
+    }
+  }
+  &__mobile-logo {
+    display: none;
+  }
+}

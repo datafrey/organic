@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+picture,
+source {
+  position: absolute;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1400px;
+}
+
+// large laptops and desktops
+@media (max-width: 1650px) {
+  .container {
+    width: 1050px;
+  }
+}
+
+// laptops/desktops
+@media (max-width: 1199.98px) {
+  .container {
+    width: 960px;
+  }
+}
+
+// landscape tablets
+@media (max-width: 991.98px) {
+  .container {
+    width: 720px;
+  }
+}
+
+// portrait tablets and large phones
+@media (max-width: 767.98px) {
+  .container {
+    width: 540px;
+  }
+}
+
+// phones
+@media (max-width: 575.98px) {
+  .container {
+    padding: 0 20px;
+    width: 100%;
+  }
+}

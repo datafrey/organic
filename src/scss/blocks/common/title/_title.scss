@@ -1,0 +1,44 @@
+.title {
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  color: $significant-text-color;
+  &_big {
+    font-size: 70px;
+    line-height: 82px;
+  }
+  &_white {
+    color: #ffffff;
+  }
+  &_centered {
+    text-align: center;
+  }
+  &_40px {
+    font-size: 40px;
+    line-height: 47px;
+  }
+  &_30px {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  &_25px {
+    font-size: 25px;
+    line-height: 29px;
+  }
+}
+
+.subtitle {
+  font-family: 'Yellowtail';
+  font-weight: 400;
+  font-size: 36px;
+  color: $subtitle-text-color;
+  &_white {
+    color: #ffffff;
+  }
+  &_centered {
+    text-align: center;
+  }
+}

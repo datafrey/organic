@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title":"Contact Us",
+"mainStyles": "css/contact.min.css"
+})
+
+<body>
+  @@include('html/header.html')
+  <main>
+    @@include('html/promo.html', {
+    "bg": "@img/contact/promo_bg.jpg",
+    "title": "Contact Us"
+    })
+    @@include('html/contact/means.html')
+    @@include('html/contact/location.html')
+    @@include('html/contact/message.html')
+    @@include('html/subscribe.html')
+  </main>
+  @@include('html/footer.html')
+  <script src="js/contactApp.js"></script>
+</body>
+
+</html>

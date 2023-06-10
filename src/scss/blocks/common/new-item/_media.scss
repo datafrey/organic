@@ -1,0 +1,224 @@
+@media (max-width: 1650px) {
+  .news-container {
+    grid-template: minmax(445px, auto) / repeat(2, 508px);
+    gap: 34px;
+    grid-auto-rows: minmax(445px, auto);
+    grid-auto-columns: 508px;
+  }
+  .new-item {
+    &__bg-img {
+      width: 508px;
+      height: 393px;
+      border-radius: 23px;
+    }
+    &__date {
+      width: 61px;
+      height: 61px;
+      top: 32px;
+      left: 24px;
+      &-day {
+        font-size: 19px;
+        line-height: 22px;
+      }
+      &-month {
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+    &__content {
+      margin: 196px auto 0 auto;
+      padding: 34px 43px 45px 43px;
+      width: 460px;
+      min-height: 246px;
+      box-shadow: 0px 15px 26px rgba(167, 167, 167, 0.25);
+      border-radius: 23px 25px 22px 22px;
+    }
+    &__author {
+      &-icon {
+        width: 13px;
+        height: 15px;
+      }
+      span {
+        margin-left: 6px;
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+    &__title {
+      margin-top: 11px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &__btn {
+      margin-top: 11px;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .news-container {
+    grid-template: minmax(445px, auto) / repeat(2, 464px);
+    gap: 32px;
+    grid-auto-rows: minmax(445px, auto);
+    grid-auto-columns: 464px;
+  }
+  .new-item {
+    &__bg-img {
+      width: 464px;
+      height: 359px;
+      border-radius: 21px;
+    }
+    &__date {
+      width: 56px;
+      height: 56px;
+      top: 29px;
+      left: 22px;
+      &-day {
+        line-height: 19px;
+      }
+      &-month {
+        line-height: 15px;
+      }
+    }
+    &__content {
+      margin: 178px auto 0 auto;
+      padding: 31px 39px 41px 39px;
+      width: 419px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .news-container {
+    grid-template: minmax(334px, auto) / repeat(2, 348px);
+    gap: 24px;
+    grid-auto-rows: minmax(334px, auto);
+    grid-auto-columns: 348px;
+  }
+  .new-item {
+    &__bg-img {
+      width: 348px;
+      height: 261px;
+      border-radius: 16px;
+    }
+    &__date {
+      width: 45px;
+      height: 45px;
+      top: 24px;
+      left: 19px;
+      &-day {
+        font-size: 16px;
+        line-height: 16px;
+      }
+      &-month {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+    &__content {
+      margin: 133px auto 0 auto;
+      padding: 23px 29px 31px 29px;
+      width: 314px;
+      min-height: 242px;
+      border-radius: 17px 19px 16px 16px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .news-container {
+    grid-template: minmax(445px, auto) / 508px;
+    gap: 40px;
+    grid-auto-rows: minmax(445px, auto);
+    grid-auto-columns: 508px;
+    justify-content: center;
+  }
+  .new-item {
+    &__bg-img {
+      width: 508px;
+      height: 393px;
+      border-radius: 23px;
+    }
+    &__date {
+      width: 61px;
+      height: 61px;
+      top: 32px;
+      left: 24px;
+      &-day {
+        font-size: 19px;
+        line-height: 22px;
+      }
+      &-month {
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+    &__content {
+      margin: 196px auto 0 auto;
+      padding: 34px 43px 45px 43px;
+      width: 460px;
+      min-height: 246px;
+      box-shadow: 0px 15px 26px rgba(167, 167, 167, 0.25);
+      border-radius: 23px 25px 22px 22px;
+    }
+    &__author {
+      &-icon {
+        width: 13px;
+        height: 15px;
+      }
+      span {
+        margin-left: 6px;
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+    &__title {
+      margin-top: 11px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &__btn {
+      margin-top: 11px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .news-container {
+    grid-template: minmax(334px, auto) / 100%;
+    gap: 24px;
+    grid-auto-rows: minmax(334px, auto);
+    grid-auto-columns: 100%;
+  }
+  .new-item {
+    width: 100%;
+    &__bg-img {
+      width: calc(100vw - 40px);
+      height: 261px;
+      border-radius: 16px;
+    }
+    &__date {
+      width: 45px;
+      height: 45px;
+      top: 24px;
+      left: 19px;
+      &-day {
+        font-size: 16px;
+        line-height: 16px;
+      }
+      &-month {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+    &__content {
+      margin: 133px auto 0 auto;
+      padding: 23px 29px 31px 29px;
+      width: 90%;
+      min-height: 242px;
+      border-radius: 17px 19px 16px 16px;
+    }
+  }
+}

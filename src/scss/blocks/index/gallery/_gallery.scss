@@ -1,0 +1,38 @@
+.gallery {
+  padding: 187px 0;
+  background-color: #f1f8f4;
+  display: grid;
+  grid-template-rows: 583px;
+  grid-template-columns: 32vw 32vw 32vw;
+  column-gap: 2vw;
+  &__item {
+    width: 32vw;
+    height: 583px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:nth-child(1) {
+      background: url('@img/homepage/squares/bg1.jpg') center (center / cover)
+        no-repeat;
+    }
+    &:nth-child(2) {
+      background: url('@img/homepage/squares/bg2.jpg') center (center / cover)
+        no-repeat;
+    }
+    &:nth-child(3) {
+      background: url('@img/homepage/squares/bg3.jpg') center (center / cover)
+        no-repeat;
+    }
+  }
+  &__text {
+    height: 96px;
+    padding: 34px 83px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: $significant-text-color;
+  }
+}

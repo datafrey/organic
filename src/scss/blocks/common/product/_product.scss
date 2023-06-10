@@ -1,0 +1,97 @@
+.products-container {
+  display: grid;
+  grid-template: 483px / repeat(4, 335px);
+  gap: 20px;
+  grid-auto-rows: 483px;
+  grid-auto-columns: 335px;
+}
+.product {
+  position: relative;
+  background: #f9f8f8;
+  border-radius: 30px;
+  overflow: hidden;
+  &__tag {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+    background: $significant-text-color;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-family: OpenSans;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+  &__img {
+    position: absolute;
+    width: auto;
+    height: 322px;
+    top: calc(335px / 2);
+    left: calc(483px / 2);
+    transform: translate(-71%, -32%);
+    object-fit: cover;
+    transition: 0.5s all;
+    &:hover {
+      transform: translate(-71%, -32%) scale(1.1);
+    }
+  }
+  &__info {
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 279px;
+  }
+  &__title {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: $significant-text-color;
+  }
+  &__divider {
+    margin-top: 13px;
+    margin-bottom: 6px;
+    height: 1px;
+    background-color: #dedddd;
+  }
+  &__footer {
+    display: grid;
+    grid-template: 25px / minmax(48px, auto) minmax(57px, auto) minmax(
+        auto,
+        158px
+      );
+    align-items: center;
+    column-gap: 7px;
+  }
+  &__old-price {
+    font-family: OpenSans;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: line-through;
+    color: #b8b8b8;
+  }
+  &__price {
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: $significant-text-color;
+  }
+  &__rating {
+    height: 18px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 18px;
+    grid-template-columns: 15px;
+    grid-auto-columns: 15px;
+    justify-items: center;
+    align-items: center;
+    column-gap: 3px;
+    align-self: center;
+    justify-self: end;
+  }
+}

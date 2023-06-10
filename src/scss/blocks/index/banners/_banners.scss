@@ -1,0 +1,33 @@
+.banners {
+  padding: 154px 0 190px 0;
+  height: auto;
+  &__items {
+    display: grid;
+    grid-template: 367px / 682px 682px;
+    gap: 36px;
+    justify-content: center;
+    grid-auto-rows: 367px;
+  }
+  &__item {
+    display: block;
+    position: relative;
+    &-info {
+      position: absolute;
+      left: 55px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &-title {
+      width: 264px;
+    }
+    &-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 682px;
+      height: 367px;
+      z-index: -1;
+      object-fit: cover;
+    }
+  }
+}

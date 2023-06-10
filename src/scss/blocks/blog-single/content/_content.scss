@@ -1,0 +1,86 @@
+.content {
+  padding: 80px 0 25px;
+  &__container {
+    margin: 0 auto;
+    width: 936px;
+  }
+  &__text {
+    margin-top: 24px;
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 165.4%;
+    color: $paragraph-text-color;
+  }
+  &__title-medium {
+    margin-top: 22px;
+  }
+  &__title-small {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 41px;
+    color: $significant-text-color;
+  }
+  &__quote {
+    margin: 50px 0;
+    padding: 69px 59px;
+    background: #f1edea;
+    border-radius: 30px;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 165.4%;
+    text-align: center;
+    color: $significant-text-color;
+    &::before {
+      content: '“';
+    }
+    &::after {
+      content: '”';
+    }
+  }
+  &__ul {
+    margin-top: 30px;
+    margin-left: 33px;
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 165.4%;
+    color: $paragraph-text-color;
+    li {
+      position: relative;
+      margin-top: 21px;
+      &::before {
+        content: '';
+        width: 3px;
+        height: 4px;
+        left: -18px;
+        top: 15px;
+        transform: translateY(-50%);
+        position: absolute;
+        background: $paragraph-text-color;
+        border-radius: 2px;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  &__ol {
+    margin-top: 30px;
+    margin-left: 28px;
+    list-style-type: decimal;
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 165.4%;
+    color: $paragraph-text-color;
+    li {
+      margin-top: 21px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

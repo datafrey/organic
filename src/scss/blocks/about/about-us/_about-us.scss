@@ -1,0 +1,67 @@
+.about-us {
+  padding: 209px 0 143px 0;
+  position: relative;
+  min-height: 1000px;
+  height: auto;
+  overflow: hidden;
+  &__img {
+    position: absolute;
+    width: 976px;
+    height: 929px;
+    top: -142px;
+    left: -288px;
+    z-index: 1;
+  }
+  &__title {
+    width: 480px;
+  }
+  &__content {
+    position: relative;
+    width: 671px;
+    margin: 0 0 0 auto;
+    z-index: 2;
+    &-text {
+      margin-top: 14px;
+      font-family: OpenSans;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 165.4%;
+      color: $paragraph-text-color;
+      p {
+        margin-top: 34px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    &-items {
+      margin-top: 48px;
+      display: grid;
+      grid-template: minmax(62px, auto) / 295px 295px;
+      column-gap: 65px;
+      row-gap: 15px;
+      grid-auto-rows: minmax(62px, auto);
+    }
+    &-item {
+      display: grid;
+      grid-template: minmax(62px, auto) / 56px 226px;
+      column-gap: 14px;
+      &-icon {
+        width: 56px;
+        height: auto;
+      }
+      &-text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 29px;
+        color: $significant-text-color;
+        width: 226px;
+      }
+    }
+    &-btn {
+      margin-top: 58px;
+    }
+  }
+}

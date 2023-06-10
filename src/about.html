@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title":"About",
+"mainStyles": "css/about.min.css"
+})
+
+<body>
+  @@include('html/header.html')
+  <main>
+    @@include('html/promo.html', {
+    "bg": "@img/about/promo_bg.jpg",
+    "title": "About Us"
+    })
+    @@include('html/about/about-us.html')
+    @@include('html/about/why-choose-us.html')
+    @@include('html/about/team.html')
+    @@include('html/about/offers.html')
+    @@include('html/subscribe.html')
+  </main>
+  @@include('html/footer.html')
+  <script src="js/aboutApp.js"></script>
+</body>
+
+</html>

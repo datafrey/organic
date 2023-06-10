@@ -1,0 +1,106 @@
+@media (max-width: 1650px) {
+  .what-we-grow {
+    padding: 150px 0;
+    &__title {
+      margin: 4px auto 0;
+      width: 362px;
+    }
+    &__wrapper {
+      margin-top: 81px;
+    }
+    &__items {
+      width: 300px;
+      min-height: 467px;
+    }
+    &__img {
+      width: 557px;
+      height: 742px;
+      top: -136px;
+    }
+    &__item {
+      margin-top: 29px;
+      &-icon {
+        width: 46px;
+        height: 46px;
+      }
+      &-title {
+        margin-top: 4px;
+      }
+      &-descr {
+        margin-top: 4px;
+        font-size: 14px;
+      }
+    }
+    &__btn {
+      margin: 110px auto 0;
+      width: 171px;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .what-we-grow {
+    padding: 112px 0;
+    &__wrapper {
+      margin-top: 60px;
+    }
+    &__img {
+      width: 473px;
+      height: 631px;
+      top: -72px;
+    }
+    &__btn {
+      margin: 85px auto 0;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .what-we-grow {
+    padding: 84px 0;
+    &__wrapper {
+      margin-top: 45px;
+    }
+    &__img {
+      display: none;
+    }
+    &__btn {
+      margin: 50px auto 0;
+      width: 160px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .what-we-grow {
+    &__items {
+      width: 250px;
+      &_aligned-right {
+        .what-we-grow__item {
+          align-items: start;
+        }
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .what-we-grow {
+    padding: 60px 0;
+    &__title {
+      width: 280px;
+    }
+    &__wrapper {
+      margin-top: 16px;
+      display: block;
+    }
+    &__items {
+      width: 100%;
+      margin-top: 29px;
+    }
+    &__btn {
+      margin: 37px auto 0;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@media (max-width: 1650px) {
+  .related-products {
+    padding: 52px 0 0 0;
+    &__products {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .related-products {
+    padding: 39px 0 0 0;
+    &__products {
+      .product {
+        &:nth-child(n + 4) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .related-products {
+    &__products {
+      .product {
+        &:nth-child(n + 4) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+}

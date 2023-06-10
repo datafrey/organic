@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title":"Quality Standard",
+"mainStyles": "css/service-single.min.css"
+})
+
+<body>
+  @@include('html/header.html')
+  <main>
+    @@include('html/promo.html', {
+    "bg": "@img/service-single/promo_bg.jpg",
+    "title": "Quality Standard"
+    })
+    @@include('html/service-single/services.html')
+    @@include('html/subscribe.html')
+  </main>
+  @@include('html/footer.html')
+  <script src="js/serviceSingleApp.js"></script>
+</body>
+
+</html>

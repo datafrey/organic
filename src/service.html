@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title":"Service",
+"mainStyles": "css/service.min.css"
+})
+
+<body>
+  @@include('html/header.html')
+  <main>
+    @@include('html/promo.html', {
+    "bg": "@img/service/promo_bg.jpg",
+    "title": "Services"
+    })
+    @@include('html/service/what-we-grow.html')
+    @@include('html/service/organic-only.html')
+  </main>
+  @@include('html/footer.html')
+  <script src="js/serviceApp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<section class="offers">
+  <div class="container">
+    <div class="offers__head">
+      <div class="subtitle offers__subtitle">Offer</div>
+      <div class="title title_white offers__title">We Offer Organic For You</div>
+      <a href="shop.html" class="btn btn_yellow offers__btn">
+        <span>View All Product</span>
+        <div class="btn__round">
+          <img src="@icons/arrow_right.svg" alt="arrow right" class="btn__icon">
+        </div>
+      </a>
+    </div>
+    <div class="products-container offers__products">
+      @@include('../product.html', {
+      "tag": "Vegetable",
+      "image": "@img/products/product9.jpg",
+      "title": "Mung Bean",
+      "oldPrice": "$20.00",
+      "newPrice": "$11.00"
+      })
+      @@include('../product.html', {
+      "tag": "Vegetable",
+      "image": "@img/products/product10.jpg",
+      "title": "Brown Hazelnut",
+      "oldPrice": "$20.00",
+      "newPrice": "$12.00"
+      })
+      @@include('../product.html', {
+      "tag": "Vegetable",
+      "image": "@img/products/product11.jpg",
+      "title": "Onion",
+      "oldPrice": "$20.00",
+      "newPrice": "$17.00"
+      })
+      @@include('../product.html', {
+      "tag": "Vegetable",
+      "image": "@img/products/product12.jpg",
+      "title": "Cabbage",
+      "oldPrice": "$20.00",
+      "newPrice": "$17.00"
+      })
+    </div>
+  </div>
+</section>

@@ -1,0 +1,52 @@
+@media (max-width: 1650px) {
+  .promo {
+    height: 337px;
+    &__bg {
+      height: 337px;
+    }
+    &__title {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .promo {
+    height: 278px;
+    &__bg {
+      height: 278px;
+    }
+    &__title {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .promo {
+    height: 208px;
+    &__bg {
+      height: 208px;
+    }
+    &__title {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .promo {
+    &__title {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .promo {
+    height: 160px;
+    &__bg {
+      height: 160px;
+    }
+  }
+}

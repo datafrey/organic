@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title":"Portfolio",
+"mainStyles": "css/portfolio.min.css"
+})
+
+<body>
+  @@include('html/header.html')
+  <main>
+    @@include('html/promo.html', {
+    "bg": "@img/portfolio/promo_bg.jpg",
+    "title": "Portfolio Standard"
+    })
+    @@include('html/portfolio/tiles.html')
+    @@include('html/subscribe.html')
+  </main>
+  @@include('html/footer.html')
+  <script src="js/portfolioApp.js"></script>
+</body>
+
+</html>

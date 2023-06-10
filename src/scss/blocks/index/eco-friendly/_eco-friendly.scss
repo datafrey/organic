@@ -1,0 +1,39 @@
+.eco-friendly {
+  padding: 100px 0 108px 0;
+  position: relative;
+  min-height: 919px;
+  height: auto;
+  &__bg-img {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 49.5vw;
+    min-height: 919px;
+    max-height: 919px;
+    height: auto;
+    object-fit: cover;
+  }
+  &__content {
+    position: relative;
+    padding: 78px 65px 78px 89px;
+    margin: 0 0 0 auto;
+    width: 789px;
+    height: auto;
+    background: #ffffff;
+    border-radius: 30px;
+  }
+  &__title {
+    width: 437px;
+  }
+  &__item {
+    margin-top: 35px;
+    &-text {
+      margin-top: 7px;
+      font-family: OpenSans;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 165.4%;
+      color: $paragraph-text-color;
+    }
+  }
+}

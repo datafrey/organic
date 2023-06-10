@@ -1,0 +1,109 @@
+.footer {
+  padding: 57px 0 102px 0;
+  height: auto;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  &__contact-us {
+    padding-right: 50px;
+    width: 335px;
+    text-align: right;
+    &-elements {
+      margin-top: 32px;
+      color: $paragraph-text-color;
+      font-family: OpenSans;
+    }
+    &-element {
+      margin-top: 30px;
+      &:first-child {
+        margin-top: 0;
+      }
+      a {
+        color: $paragraph-text-color;
+      }
+    }
+    &-method {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 165%;
+    }
+    &-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 165%;
+      text-decoration: none;
+    }
+  }
+  &__credits {
+    margin: 0 42px;
+    width: 543px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      &-text {
+        margin-left: 8px;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 38px;
+        color: $significant-text-color;
+      }
+    }
+    &-descr {
+      margin-top: 23px;
+      font-family: OpenSans;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 165.4%;
+      text-align: center;
+      color: $paragraph-text-color;
+    }
+    &-social {
+      margin-top: 49px;
+      width: 285px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        background: #eff6f1;
+        border-radius: 50%;
+      }
+      &-icon {
+        height: auto;
+        width: 20px;
+      }
+    }
+  }
+  &__utility-pages {
+    padding-left: 50px;
+    width: 335px;
+    &-links {
+      margin-top: 23px;
+    }
+    &-link {
+      display: block;
+      font-family: OpenSans;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 272.9%;
+      color: $paragraph-text-color;
+      text-decoration: none;
+    }
+  }
+  &__divider {
+    margin-top: 7px;
+    height: 336px;
+    width: 1px;
+    background-color: #d5d5d5;
+  }
+}
